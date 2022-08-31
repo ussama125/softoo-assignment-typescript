@@ -6,7 +6,7 @@ npm run build
 
 ## To run app:
 npm run start <sku>
-e.g npm run start LTV719449/39/39
+==(e.g npm run start LTV719449/39/39)==
 
 ## To run tests:
 npm run test
