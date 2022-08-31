@@ -5,7 +5,7 @@ softoo-assignment
 npm run build
 
 ## To run app:
-npm run start <sku>
+npm run start <<sku>>
 
 e.g npm run start LTV719449/39/39
 
