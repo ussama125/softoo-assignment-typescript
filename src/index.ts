@@ -1,12 +1,16 @@
 import { getCurrentStock } from "./functions/get_current_stock";
 
-const main = async () => {
+const app = async () => {
   try {
-    const currentStock = await getCurrentStock("LTV719449/39/39");
+    let sku = 'LTV719449/39/39';
+    if (process.argv && process.argv.length) {
+      sku = process.argv[2];
+    }
+    const currentStock = await getCurrentStock(sku);
     console.log(currentStock);
   } catch (err) {
     console.error(err);
   }
 };
 
-main();
+app();
